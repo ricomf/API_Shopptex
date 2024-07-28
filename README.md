@@ -1,24 +1,65 @@
-# README
+# API de Produtos
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Esta é uma API simples para gerenciar produtos. A API permite criar, listar, atualizar e deletar produtos, além de permitir a aplicação de filtros e ordenações.
 
-Things you may want to cover:
+## Pré-requisitos
 
-* Ruby version
+Certifique-se de ter os seguintes softwares instalados em sua máquina:
 
-* System dependencies
+- [Ruby](https://www.ruby-lang.org/en/)
+- [Rails](https://rubyonrails.org/)
+- [SQLite3](https://www.sqlite.org/)
 
-* Configuration
+## Configuração do Projeto
 
-* Database creation
+1. Clone este repositório para sua máquina local:
 
-* Database initialization
+    ```sh
+    git clone https://github.com/seu_usuario/seu_projeto.git
+    cd seu_projeto
+    ```
 
-* How to run the test suite
+2. Instale as dependências do projeto:
 
-* Services (job queues, cache servers, search engines, etc.)
+    ```sh
+    bundle install
+    ```
 
-* Deployment instructions
+3. Crie e configure o banco de dados:
 
-* ...
+    ```sh
+    rails db:create
+    rails db:migrate
+    ```
+
+4. Popule o banco de dados com dados iniciais:
+
+    ```sh
+    rails db:seed
+    ```
+
+5. Inicie o servidor Rails:
+
+    ```sh
+    rails server
+    ```
+
+## Estrutura do Banco de Dados
+
+O banco de dados contém uma tabela `products` com os seguintes campos:
+
+- `name` (string): O nome do produto.
+- `price` (decimal): O preço do produto.
+- `image` (string): A URL da imagem do produto.
+- `on_promotion` (boolean): Indica se o produto está em promoção.
+- `created_at` (datetime): A data e hora de criação do registro.
+- `updated_at` (datetime): A data e hora de atualização do registro.
+
+## Modelo Product
+
+O modelo `Product` é definido como segue:
+
+```ruby
+class Product < ApplicationRecord
+end
+```
