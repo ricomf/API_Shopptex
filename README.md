@@ -75,6 +75,6 @@ rails server or rails s
 Ao iniciar o server, para testar se a API está funcionando testar os seguintes destinos
 ```
 /products
-e
+
 /info
 ```
