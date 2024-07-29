@@ -63,6 +63,7 @@ O modelo `Product` é definido como segue:
 class Product < ApplicationRecord
 end
 ```
+
 ```Iniciando a API na máquina
 rails db:migrate
 rails db:seed
