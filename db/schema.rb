@@ -16,9 +16,9 @@ ActiveRecord::Schema[7.1].define(version: 2024_07_28_151206) do
     t.decimal "price"
     t.string "photo"
     t.boolean "is_promotion"
+    t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "image"
   end
 
 end
