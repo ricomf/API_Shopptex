@@ -70,3 +70,11 @@ rails db:migrate
 rails db:seed
 rails server or rails s
 ```
+
+## OBS!
+Ao iniciar o server, para testar se a API está funcionando testar os seguintes destinos
+```
+/products
+e
+/info
+```
