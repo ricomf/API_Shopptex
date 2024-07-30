@@ -10,17 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema[7.1].define(version: 2024_07_30_231505) do
-=======
-ActiveRecord::Schema[7.1].define(version: 2024_07_28_151206) do
->>>>>>> 85281fcc5479e0008fe503c17fa0a6d2224f56bf
   create_table "products", force: :cascade do |t|
     t.string "name"
     t.float "price"
     t.string "photo"
     t.boolean "is_promotion"
-    t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
